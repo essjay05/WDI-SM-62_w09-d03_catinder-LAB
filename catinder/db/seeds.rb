@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+cats = Cat.create([
+    { name: "Korben Dallas", image_uri: "cat-cool.jpg", votes: 0 },
+    { name: "Stitch", image_uri: "cat-curious.jpg", votes: 0 },
+    { name: "Twix", image_uri: "cat-cute.jpg", votes: 0 },
+    { name: "Buster", image_uri: "cat-handsome.jpg", votes: 0 },
+    { name: "Garfield", image_uri: "cat-hate.jpg", votes: 0 },
+    { name: "Kingsley", image_uri: "cat-love.jpg", votes: 0 },
+])
