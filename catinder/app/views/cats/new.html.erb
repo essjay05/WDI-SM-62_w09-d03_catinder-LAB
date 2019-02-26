@@ -1,2 +1,17 @@
-<h1>Cats#new</h1>
-<p>Find me in app/views/cats/new.html.erb</p>
+<h1>Add a New Cat</h1>
+
+<%= form_for @cat do |f| %>
+
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name%>
+    </div>
+    
+    <div>
+        <%= f.label :image_uri %>
+        <%= f.text_field :image_uri %>
+    </div>
+
+    <%= f.submit "Add New Cat!" %>
+
+<% end %>

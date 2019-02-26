@@ -1,2 +1,11 @@
-<h1>Cats#index</h1>
-<p>Find me in app/views/cats/index.html.erb</p>
+<div class="container">
+<h1>List of Cats:</h1>
+
+    <% @cats.each do |c| %>
+        <%= image_tag (c.image_uri) %>
+        <h3><a href="/cats/<%= c.id %>"><%= c.name %></a></h4>
+        <p> Votes: <%= c.votes %> </p>
+        
+    <% end %>
+</div>
+
